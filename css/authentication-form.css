@@ -11,7 +11,11 @@ body {
 }
 
 .content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
   padding: 30px;
+  flex-wrap: wrap;
 }
 
 h2 {
@@ -36,7 +40,7 @@ form {
 
 #sign-in,
 #sign-up {
-  width: 100%;
+  width: 48%;
 }
 
 a {
@@ -83,3 +87,29 @@ input[type="submit"]:hover {
 .form select {
   height: 30px;
 }
+
+.form-input-control,
+.form-checkbox-control,
+.form-submit-control,
+.form-group-horizontal-control,
+.form-group-vertical-control {
+  margin-bottom: 15px;
+}
+
+.form-radio-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (min-width: 768px) {
+  .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+
+
+
